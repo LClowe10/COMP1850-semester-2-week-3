@@ -12,8 +12,8 @@
 int main( void ) {
 
     float a = 1.0;
-    float b = -5.0;
-    float c = 6.0;
+    float b = 0.0;
+    float c = -1.0;
     float root1, root2;
 
     /*
@@ -21,8 +21,14 @@ int main( void ) {
      * You can define additional variable for intermediate results to make the code simpler.
      * Print out the final results for the 2 roots as float values.
      */
-
-    
+     
+     // Makes use of the quadratic formula to calculate 2 roots
+     root1 = ((-b) + (sqrt((b * b) - (4 * a * c)))) / (2 * a);
+     root2 = ((-b) - (sqrt((b * b) - (4 * a * c)))) / (2 * a);
+     
+     // Prints the results
+     printf("The first root is %f\n", root1);
+     printf("The second root is %f\n", root2);
 
     return 0;
 }
